@@ -8,10 +8,13 @@ export const NavBar = () => {
         src={logoNavBar}
         alt="logo no topo da tela"
       />
-        teste navbar
         <MenuHamburguer>
           <nav>
-            
+            <ul>
+              <li>home</li>
+              <li>about</li>
+              <li>teste</li>
+            </ul>
           </nav>
         </MenuHamburguer>
     </Container>
