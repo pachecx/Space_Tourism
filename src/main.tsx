@@ -1,19 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App.tsx';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
 
-import { Home } from './Pages/Home/Home.tsx';
-import { Crew } from './Pages/Crew/Crew.tsx';
-import { Tech } from './Pages/Tech/Tech.tsx';
-import { Destination } from './Pages/Destination/Destination.tsx';
+import { Home } from "./Pages/Home/Home.tsx";
+import { Crew } from "./Pages/Crew/Crew.tsx";
+import { Tech } from "./Pages/Tech/Tech.tsx";
+import { DestinationA } from "./Pages/Destination/DestinationA/index.tsx";
 
-
-import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    element: <App/>,
+    element: <App />,
     children: [
       {
         path: "/",
@@ -21,22 +20,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/crew",
-        element: <Crew />
+        element: <Crew />,
       },
       {
         path: "/tech",
-        element: <Tech />
+        element: <Tech />,
       },
       {
-        path: "/destination",
-        element: <Destination />
-      }
-    ]
-  }
-])
+        path: "/destinationA",
+        element: <DestinationA />,
+      },
+    ],
+  },
+]);
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
-  </React.StrictMode>,
-)
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
