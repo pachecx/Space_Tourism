@@ -18,12 +18,20 @@ export const DestinationA = () => {
           <span>01</span>Pick your destination
         </p>
         <img src={moon} alt="Imagem da lua" />
-        <nav>
+        <nav className="menu-nav">
           <ol>
-            <li>MOON</li>
-            <li>MARS</li>
-            <li>EUROPA</li>
-            <li>TITAN</li>
+            <li>
+              <a>MOON</a>
+            </li>
+            <li>
+              <a>MARS</a>
+            </li>
+            <li>
+              <a>EUROPA</a>
+            </li>
+            <li>
+              <a>TITAN</a>
+            </li>
           </ol>
         </nav>
       </div>

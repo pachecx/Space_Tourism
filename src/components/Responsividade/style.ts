@@ -6,7 +6,7 @@ export const Container = styled.div`
     z-index: -1;
     left: 0;
     right: 0;
-    height: 100vh;
+    //height: 100vh;
     width: 100%;
   }
 `;
