@@ -22,6 +22,7 @@ export const Container = styled.div`
       span {
         font-weight: bold;
         margin-right: 1.8rem;
+        color: gray;
       }
     }
 
@@ -42,17 +43,19 @@ export const Container = styled.div`
     }
 
     //Versão Tablet
-    @media(min-width: 768px){
-      p{
-        font-size: 2rem;
-        text-align: left;
-
-        span{
+    @media (min-width: 768px) {
+      border: 1px solid red;
+      text-align: left;
+      p {
+        font-size: 2.2rem;
+        border: 1px solid red;
+        width: 100%;
+        span {
           color: #979797;
         }
       }
 
-      img{
+      img {
         height: 30rem;
         width: 30rem;
       }
@@ -92,7 +95,13 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     padding: 0 9.7rem;
+
+    .distance {
+      display: flex;
+      justify-content: center;
+      border: 1px solid red;
+    }
   }
 `;

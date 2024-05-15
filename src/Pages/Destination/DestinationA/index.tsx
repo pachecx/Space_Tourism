@@ -47,11 +47,14 @@ export const DestinationA = () => {
 
       <div className="line"></div>
       <div className="distance">
-        <span>AVG. DISTANCE</span>
-        <p>384,400 km</p>
-
-        <span>Est. travel time</span>
-        <p>3 days</p>
+        <div>
+          <span>AVG. DISTANCE</span>
+          <p>384,400 km</p>
+        </div>
+        <div>
+          <span>Est. travel time</span>
+          <p>3 days</p>
+        </div>
       </div>
     </Container>
   );
