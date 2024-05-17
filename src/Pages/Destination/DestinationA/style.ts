@@ -3,33 +3,22 @@ import styled from "styled-components";
 export const Container = styled.div`
   padding: 0 2.4rem;
   height: 100vh;
+
+  @media (min-width: 1024px){
+    
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+  }
 `;
 
 export const TextDistancia = styled.div`
   text-align: center;
 
-  .menu-nav {
-    padding: 0 3rem;
-    margin-bottom: 2rem;
+  @media (min-width: 1024px){
+    width: 44rem;
+    height: 55.5rem;
 
-    ol {
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
-
-      li {
-        color: var(--azul-pastel);
-        font-size: 1.4rem;
-      }
-    }
-  }
-
-  h1 {
-    font-size: 5.6rem;
-    color: var(--branco);
-  }
-
-  p {
-    color: var(--azul-pastel);
+    border: 1px solid yellow;
   }
 `;

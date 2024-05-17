@@ -19,4 +19,28 @@ export const Container = styled.div`
     display: flex;
     margin: 3.2rem auto;
   }
+
+  @media (min-width: 768px){
+
+    p{
+      text-align: left;
+      font-size: 2rem;
+    }
+
+    img{
+      width: 30rem;
+      height: 30rem;
+      margin-top: 6rem;
+    }
+  }
+
+  @media (min-width: 1024px){
+    width: 45rem;
+    height: 55.2rem;
+
+    img{
+      width: 44.5rem;
+      height: 44.5rem;
+    }
+  }
 `;

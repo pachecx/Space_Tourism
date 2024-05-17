@@ -26,14 +26,13 @@ export const DestinationA = () => {
         altImagem={"Imagem da lua"}
       />
 
-      <NavDestinos
-        moom={"MOON"}
-        mars={"MARS"}
-        europa={"EUROPA"}
-        titan={"TITAN"}
-      />
-
       <TextDistancia>
+        <NavDestinos
+          moom={"MOON"}
+          mars={"MARS"}
+          europa={"EUROPA"}
+          titan={"TITAN"}
+        />
         <LuaTexto
           lua={"MOON"}
           textoLua={`
@@ -48,7 +47,7 @@ export const DestinationA = () => {
         <Distancia
           distance={"AVG. DISTANCE"}
           km={"384,400 km"}
-          travelTime={"Est. travel time"}
+          travelTime={"EST. TRAVEL TIME"}
           days={"3 days"}
         />
       </TextDistancia>

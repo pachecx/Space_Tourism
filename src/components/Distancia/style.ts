@@ -10,19 +10,26 @@ export const Container = styled.div`
   }
 
   .distance:nth-child(1) {
-    border: 1px solid red;
     margin-bottom: 3.2rem;
   }
 
   span {
     color: var(--azul-pastel);
+    font-size: 1.4rem;
   }
 
   p {
     color: var(--branco);
+    font-size: 2.8rem;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  @media (min-width: 1024px){
+    
   }
 `;
