@@ -10,4 +10,17 @@ export const Container = styled.div`
     //height: 100vh;
     width: 100%;
   }
+
+  @media (min-width: 768px) {
+    //height: 100vh;
+    .imgFundo {
+      //height: 100vh;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .imgFundo {
+      height: 100vh;
+    }
+  }
 `;

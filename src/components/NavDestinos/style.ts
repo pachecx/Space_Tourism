@@ -15,6 +15,19 @@ export const Container = styled.div`
         font-size: 1.4rem;
       }
     }
+
+    a:hover{
+      cursor: pointer;
+      color: var(--branco);
+      font-weight: 600;
+      transition: .2s;
+
+      //text-decoration: underline 2px;
+    }
+
+    a:active{
+      text-decoration: underline 2px;
+    }
   }
 
   @media (min-width: 768px) {
@@ -22,7 +35,6 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1024px) {
-    border: 1px solid red;
     padding: 0;
 
     .menu-nav {

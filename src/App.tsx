@@ -6,7 +6,7 @@ function App() {
 
   return (
     <Container>
-      {/* <NavBar /> */}
+      <NavBar />
       <Main>
         <Outlet />
       </Main>
