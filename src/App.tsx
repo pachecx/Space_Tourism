@@ -1,9 +1,8 @@
-import { Container, Main } from './App';
-import { NavBar } from './components/NavBar';
-import { Outlet } from 'react-router-dom';
+import { Container, Main } from "./App";
+import { NavBar } from "./components/NavBar";
+import { Outlet } from "react-router-dom";
 
 function App() {
-
   return (
     <Container>
       <NavBar />
@@ -11,7 +10,7 @@ function App() {
         <Outlet />
       </Main>
     </Container>
-  )
+  );
 }
 
-export default App
+export default App;
