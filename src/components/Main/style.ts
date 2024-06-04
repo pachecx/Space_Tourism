@@ -4,6 +4,7 @@ export const Container = styled.div`
   p {
     color: var(--branco);
     text-align: center;
+    padding-top: 5rem;
 
     span {
       color: gray;

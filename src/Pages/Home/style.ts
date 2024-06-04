@@ -65,7 +65,7 @@ export const Main = styled.div`
 
     .textGeral,
     .circulo {
-      margin-top: 20rem;
+      margin-top: 10rem;
     }
 
     .textGeral {
