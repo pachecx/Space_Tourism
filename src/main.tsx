@@ -7,6 +7,7 @@ import { Home } from "./Pages/Home/Home.tsx";
 import { Crew } from "./Pages/Crew/Crew.tsx";
 import { Tech } from "./Pages/Tech/Tech.tsx";
 import { DestinationA } from "./Pages/Destination/DestinationA/index.tsx";
+import { DestinationB } from "./Pages/Destination/DestinationB";
 
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/destinationA",
         element: <DestinationA />,
+      },
+      {
+        path: "/destinationB",
+        element: <DestinationB />,
       },
     ],
   },

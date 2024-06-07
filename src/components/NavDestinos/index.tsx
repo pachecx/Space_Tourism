@@ -1,6 +1,8 @@
 import React from "react";
 import { Container } from "./style";
 
+import { Link } from "react-router-dom";
+
 interface ProposNavDestinos{
     moom: string;
     mars: string;
@@ -14,10 +16,14 @@ export const NavDestinos: React.FC<ProposNavDestinos> = ({moom, mars, europa, ti
       <nav className="menu-nav">
         <ol>
           <li>
-            <a>{moom}</a>
+            <Link to={"/destinationA"}>
+              {moom}
+            </Link>
           </li>
           <li>
-            <a>{mars}</a>
+            <Link to={"destinationB"}>
+              {mars}
+            </Link>
           </li>
           <li>
             <a>{europa}</a>
