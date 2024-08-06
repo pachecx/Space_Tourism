@@ -4,10 +4,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import imgNavBar from '../../assets/Group 2.svg';
 
 const navigation = [
-  { name: "HOME", href: "/", current: true },
-  { name: "DESTINATION", href: "/destinationA", current: false },
-  { name: "CREW", href: "#", current: false },
-  { name: "TECHNOLOGY", href: "#", current: false },
+  { name: "00 HOME", href: "/", current: true },
+  { name: "01 DESTINATION", href: "/destinationA", current: false },
+  { name: "02 CREW", href: "#", current: false },
+  { name: "03 TECHNOLOGY", href: "#", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -16,10 +16,10 @@ function classNames(...classes: string[]) {
 
 export const NavBar = () => {
   return (
-    <Disclosure as="nav" className="fixed top-0 left-0 w-full bg-black bg-opacity-50 z-50 pl-5 pr-5">
+    <Disclosure as="nav" className="fixed top-2 left-0 w-full bg-black bg-opacity-50 z-50 pl-5 pr-5">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto px-2 sm:px-6 lg:px-1">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -33,15 +33,15 @@ export const NavBar = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-left sm:items-stretch sm:justify-between border-2 border-green-500">
-                <div className="flex flex-shrink-0 items-center  border-2 border-yellow-200">
+              <div className="flex flex-1 items-center justify-left sm:items-stretch sm:justify-between">
+                <div className="flex flex-shrink-0 items-center ">
                   <img
-                    className="h-10 w-10"
+                    className="h-15 w-15"
                     src={imgNavBar}
                     alt="Your Company"
                   />
                 </div>
-                <div className="hidden sm:ml-6 sm:block  border-2 border-yellow-200">
+                <div className="hidden sm:ml-6 sm:block ">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
@@ -51,7 +51,7 @@ export const NavBar = () => {
                           item.current
                             ? "bg-gray-900 text-white"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                          "rounded-md px-3 py-2 font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
