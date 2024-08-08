@@ -6,7 +6,7 @@ import imgNavBar from '../../assets/Group 2.svg';
 const navigation = [
   { name: "00 HOME", href: "/", current: true },
   { name: "01 DESTINATION", href: "/destinationA", current: false },
-  { name: "02 CREW", href: "#", current: false },
+  { name: "02 CREW", href: "/crew", current: false },
   { name: "03 TECHNOLOGY", href: "#", current: false },
 ];
 
@@ -36,7 +36,7 @@ export const NavBar = () => {
               <div className="flex flex-1 items-center justify-left sm:items-stretch sm:justify-between">
                 <div className="flex flex-shrink-0 items-center ">
                   <img
-                    className="h-15 w-15"
+                    className="h-12 w-12"
                     src={imgNavBar}
                     alt="Your Company"
                   />

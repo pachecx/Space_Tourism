@@ -6,15 +6,18 @@ export const Container = styled.div`
     z-index: -1;
     left: 0;
     right: 0;
-    //bottom: 0;
+    bottom: 0;
     //height: 100vh;
     width: 100%;
   }
 
   @media (min-width: 768px) {
     //height: 100vh;
+    background-size: cover;
+
     .imgFundo {
-      //height: 100vh;
+      height: 100vh;
+      //  background-size: cover;
     }
   }
 
