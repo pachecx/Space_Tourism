@@ -4,10 +4,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import imgNavBar from '../../assets/Group 2.svg';
 
 const navigation = [
-  { name: "00 HOME", href: "/", current: true },
-  { name: "01 DESTINATION", href: "/destinationA", current: false },
-  { name: "02 CREW", href: "/crew", current: false },
-  { name: "03 TECHNOLOGY", href: "/Technology", current: false },
+  { name: " HOME", href: "/", current: true },
+  { name: " DESTINATION", href: "/destinationA", current: false },
+  { name: " CREW", href: "/crew", current: false },
+  { name: " TECHNOLOGY", href: "/Technology", current: false },
 ];
 
 function classNames(...classes: string[]) {

@@ -24,7 +24,7 @@ export const Crew = () => {
   return (
     <Container>
       <Responsividade bgImgM={imgM} bgImgDesk={imgDesk} bgImgTablet={imgTa} />
-      <TextoTopo numberText={"02"} text={"Meet your crew"} />
+      <TextoTopo numberText={"02"} text={"Meet your crew"} classType={true}/>
       <main>
         <Swiper
           pagination={{

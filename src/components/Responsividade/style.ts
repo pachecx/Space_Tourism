@@ -7,8 +7,10 @@ export const Container = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    //height: 100vh;
+    min-height: 59.9rem;
     width: 100%;
+    //min-height: 600px;
+    
   }
 
   @media (min-width: 768px) {

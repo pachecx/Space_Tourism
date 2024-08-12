@@ -21,18 +21,17 @@ import { TextoTopo } from "../../components/TextoTopo_C";
 import { SwiperSlideComponent } from "../../components/SwiperSlideComponents";
 
 export const Technology = () => {
-
   const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   };
-  
+
   return (
     <Container>
       <Responsividade bgImgM={imgM} bgImgDesk={imgDesk} bgImgTablet={imgTa} />
-      <TextoTopo numberText={"02"} text={"Meet your crew"} />
+      <TextoTopo numberText={"03"} text={"SPACE LAUNCH 101"} classType={false} />
       <main>
         <Swiper
           pagination={pagination}
@@ -42,35 +41,27 @@ export const Technology = () => {
           <SwiperSlide className="swipeContent">
             <SwiperSlideComponent
               imgSlide={rocket}
-              title1={"Commander"}
-              title2={"Douglas Hurley"}
-              text={`Douglas Gerald Hurley is an American engineer, former Marine
-                  Corps pilot and former NASA astronaut. He launched into space
-                  for the third time as commander of Crew Dragon Demo-2.`}
+              title1={"THE TERMINOLOGY…"}
+              title2={"LAUNCH VEHICLE"}
+              text={`A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!`}
             />
           </SwiperSlide>
 
           <SwiperSlide className="swipeContent">
             <SwiperSlideComponent
               imgSlide={port}
-              title1={"Mission Specialist"}
-              title2={"MARK SHUTTLEWORTH"}
-              text={`Mark Richard Shuttleworth is the founder and CEO of Canonical,
-                the company behind the Linux-based Ubuntu operating system.
-                Shuttleworth became the first South African to travel to space
-                as a space tourist.`}
+              title1={"THE TERMINOLOGY…"}
+              title2={"SPACEPORT"}
+              text={`A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.`}
             />
           </SwiperSlide>
 
           <SwiperSlide className="swipeContent">
             <SwiperSlideComponent
               imgSlide={pilot}
-              title1={"Pilot"}
-              title2={"Victor Glover"}
-              text={`Pilot on the first operational flight of the SpaceX Crew Dragon
-                to the International Space Station. Glover is a commander in the
-                U.S. Navy where he pilots an F/A-18.He was a crew member of
-                Expedition 64, and served as a station systems flight engineer.`}
+              title1={"THE TERMINOLOGY…"}
+              title2={"SPACE CAPSULE"}
+              text={`A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.`}
             />
           </SwiperSlide>
 

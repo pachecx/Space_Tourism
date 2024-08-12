@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  border: 1px solid #000;
-  height: 100vh;
-  overflow: hidden;
+  border: 1px solid red;
+  //height: 100vh;
+  //overflow: hidden;
+  min-height: 600px;
 
-  .bgIMg {
+
+  /* .bgIMg {
     position: absolute;
     z-index: -1;
     left: 0;
-  }
+  } */
 
   .imgSwiper {
     width: 100%;
@@ -40,25 +42,9 @@ export const Container = styled.div`
     color: #000;
   }
 
-  .textTop {
-    font-size: 1.6rem;
-    color: #ffff;
-    font-weight: bold;
-    text-align: center;
-    margin: 8.8rem auto 1.6rem;
-    font-family: "Barlow Condensed", sans-serif;
-  }
-
-  .numberTop {
-    font-size: 1.6rem;
-    color: #56585e;
-    margin-right: 1.6rem;
-  }
-
   main {
     .swipeContent {
       //height: 100vh;
-
       text-align: center;
     }
 
@@ -69,18 +55,16 @@ export const Container = styled.div`
     }
 
     .line {
-      border: 1.5px solid #383b4b;
-      width: 90%;
-      margin: 0 auto;
+     display: none;
     }
 
     .text {
-      margin-top: 3.2rem;
+      margin-top: 7rem;
       padding: 0 2.4rem;
 
       .textPosition {
-        color: #56585e;
-        font-size: 2.6rem;
+        color: #D0D6F9;
+        font-size: 1.4rem;
       }
 
       .textName {
@@ -90,6 +74,7 @@ export const Container = styled.div`
 
       .textAbout {
         color: #d0d6f9;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -146,9 +131,12 @@ export const Container = styled.div`
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
+      padding-left: 30rem;
 
       .imgSwiper {
         margin: 0;
+        height: 51.5rem;
+        width: 52.7rem;
       }
 
       .text {
@@ -156,7 +144,7 @@ export const Container = styled.div`
         width: 68.8rem;
 
         .textPosition {
-          font-size: 3.2rem;
+          font-size: 1.6rem ;
           color: #818387;
         }
         .textName {
@@ -171,8 +159,19 @@ export const Container = styled.div`
     }
 
     .swiper-pagination {
-      top: 45.5rem;
-      left: 14%;
+      top: 15.5rem;
+      left: 15%;
+      width: 6%;
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+
+    .swiper-pagination-bullet {
+      height: 8rem;
+      width: 8rem;
+      font-size: 3.2rem;
+      padding: 1.5rem;
     }
   }
 `;

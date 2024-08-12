@@ -4,10 +4,14 @@ export const Container = styled.div`
   .textTop {
     font-size: 1.6rem;
     color: #ffff;
-    font-weight: bold;
     text-align: center;
-    margin: 8.8rem auto 1.6rem;
-    font-family: "Barlow Condensed", sans-serif;
+    margin: 5.8rem auto 1.6rem;
+    font-family: "Barlow Condensed";
+    font-weight: 400;
+  }
+
+  .textTop2 {
+    margin: 4.8rem auto 1.6rem;
   }
 
   .numberTop {
@@ -26,7 +30,6 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1024px) {
-    // overflow: hidden;
     .textTop {
       text-align: left;
       margin-left: 18rem;
