@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 0 2.4rem;
-  height: 100vh;
+  height: 850px;
+
+  border: 4px solid blue;
 
   @media (min-width: 1024px) {
     display: flex;
@@ -13,6 +15,7 @@ export const Container = styled.div`
 
 export const TextDistancia = styled.div`
   text-align: center;
+  border: 2px solid yellow;
 
   @media (min-width: 1024px) {
     width: 44rem;

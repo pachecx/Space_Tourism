@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  border: 1px solid red;
   //height: 100vh;
   //overflow: hidden;
   min-height: 600px;

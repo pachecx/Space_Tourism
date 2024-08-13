@@ -5,13 +5,13 @@ export const Container = styled.div`
     font-size: 1.6rem;
     color: #ffff;
     text-align: center;
-    margin: 5.8rem auto 1.6rem;
+    padding: 5.8rem 0 1.6rem;
     font-family: "Barlow Condensed";
     font-weight: 400;
   }
 
   .textTop2 {
-    margin: 4.8rem auto 1.6rem;
+    //margin: 4.8rem auto 1.6rem;
   }
 
   .numberTop {
