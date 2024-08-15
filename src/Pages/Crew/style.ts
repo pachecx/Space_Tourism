@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  border: 1px solid #000;
+  //border: 1px solid #000;
   height: 100vh;
-  overflow: hidden;
+  //overflow: hidden;
+
+  .imgFundo {
+    height: 100vh;
+  }
 
   .bgIMg {
     position: absolute;
@@ -38,14 +42,14 @@ export const Container = styled.div`
     background: #ffff;
   }
 
-  .textTop {
+  /* .textTop {
     font-size: 1.6rem;
     color: #ffff;
     font-weight: bold;
     text-align: center;
     margin: 8.8rem auto 1.6rem;
     font-family: "Barlow Condensed", sans-serif;
-  }
+  } */
 
   .numberTop {
     font-size: 1.6rem;
@@ -127,7 +131,7 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1024px) {
-    // overflow: hidden;
+    //overflow: hidden;
 
     .textTop {
       text-align: left;

@@ -1,17 +1,16 @@
+import { Container, TextDistancia } from "./style";
+import { Responsividade } from "../../../components/Responsividade";
 import imgMob from "../../../assets/destination/background-destination-mobile.jpg";
 import bgImgTablet from "../../../assets/destination/background-destination-tablet.jpg";
 import bgImgDesk from "../../../assets/destination/background-destination-desktop.jpg";
-import mars from "../../../assets/destination/image-mars.png";
+import moon from "../../../assets/destination/image-moon.png";
 import { Main } from "../../../components/Main";
 import { Distancia } from "../../../components/Distancia";
-import { Linha } from "../../../components/Linha";
-import { LuaTexto } from "../../../components/LuaTexto";
 import { NavDestinos } from "../../../components/NavDestinos";
-import { Responsividade } from "../../../components/Responsividade";
-import { TextDistancia } from "../DestinationA/style";
-import { Container } from "./style";
+import { LuaTexto } from "../../../components/LuaTexto";
+import { Linha } from "../../../components/Linha";
 
-export const DestinationB = () => {
+export const DestinationD = () => {
   return (
     <Container>
       <Responsividade
@@ -23,7 +22,7 @@ export const DestinationB = () => {
       <Main
         topTexto={"01"}
         tituloTexto={"Pick your destination"}
-        imgTela={mars}
+        imgTela={moon}
         altImagem={"Imagem da lua"}
       />
 
@@ -35,19 +34,20 @@ export const DestinationB = () => {
           titan={"TITAN"}
         />
         <LuaTexto
-          lua={"MARS"}
+          lua={"TITAN"}
           textoLua={`
-         Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest
-          planetary mountain in our solar system. It’s two and a half times the size of Everest!
+          The only moon known to have a dense atmosphere other than Earth, 
+          Titan is a home away from home (just a few hundred degrees colder!). 
+          As a bonus, you get striking views of the Rings of Saturn.
         `}
         />
         <Linha />
 
         <Distancia
           distance={"AVG. DISTANCE"}
-          km={"225 MIL. km"}
+          km={"1.6 BIL. km"}
           travelTime={"EST. TRAVEL TIME"}
-          days={"9 months"}
+          days={"7 days"}
         />
       </TextDistancia>
     </Container>

@@ -1,17 +1,16 @@
+import { Container, TextDistancia } from "./style";
+import { Responsividade } from "../../../components/Responsividade";
 import imgMob from "../../../assets/destination/background-destination-mobile.jpg";
 import bgImgTablet from "../../../assets/destination/background-destination-tablet.jpg";
 import bgImgDesk from "../../../assets/destination/background-destination-desktop.jpg";
-import mars from "../../../assets/destination/image-mars.png";
+import europa from "../../../assets/destination/image-europa.png";
 import { Main } from "../../../components/Main";
 import { Distancia } from "../../../components/Distancia";
-import { Linha } from "../../../components/Linha";
-import { LuaTexto } from "../../../components/LuaTexto";
 import { NavDestinos } from "../../../components/NavDestinos";
-import { Responsividade } from "../../../components/Responsividade";
-import { TextDistancia } from "../DestinationA/style";
-import { Container } from "./style";
+import { LuaTexto } from "../../../components/LuaTexto";
+import { Linha } from "../../../components/Linha";
 
-export const DestinationB = () => {
+export const DestinationC = () => {
   return (
     <Container>
       <Responsividade
@@ -23,8 +22,8 @@ export const DestinationB = () => {
       <Main
         topTexto={"01"}
         tituloTexto={"Pick your destination"}
-        imgTela={mars}
-        altImagem={"Imagem da lua"}
+        imgTela={europa}
+        altImagem={"Imagem da lua Europa"}
       />
 
       <TextDistancia>
@@ -35,19 +34,21 @@ export const DestinationB = () => {
           titan={"TITAN"}
         />
         <LuaTexto
-          lua={"MARS"}
+          lua={"EUROPA"}
           textoLua={`
-         Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest
-          planetary mountain in our solar system. It’s two and a half times the size of Everest!
+          The smallest of the four Galilean moons orbiting Jupiter, 
+          Europa is a winter lover’s dream. With an icy surface, it’s 
+          perfect for a bit of ice skating, curling, hockey, or simple 
+          relaxation in your snug wintery cabin.
         `}
         />
         <Linha />
 
         <Distancia
           distance={"AVG. DISTANCE"}
-          km={"225 MIL. km"}
+          km={"628 MIL. km"}
           travelTime={"EST. TRAVEL TIME"}
-          days={"9 months"}
+          days={"3 days"}
         />
       </TextDistancia>
     </Container>

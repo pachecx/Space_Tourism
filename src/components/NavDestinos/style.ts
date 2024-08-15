@@ -22,7 +22,7 @@ export const Container = styled.div`
       font-weight: 600;
       transition: .2s;
 
-      text-decoration: underline 3px solid red;
+      text-decoration: underline 3px solid #ffff;
 
       //text-decoration: underline 2px;
     }

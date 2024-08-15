@@ -8,7 +8,8 @@ import { Crew } from "./Pages/Crew/Crew.tsx";
 import { Technology } from "./Pages/Tech/Tech.tsx";
 import { DestinationA } from "./Pages/Destination/DestinationA/index.tsx";
 import { DestinationB } from "./Pages/Destination/DestinationB";
-import { Destination } from "./Pages/Destination/Destination.tsx";
+import { DestinationC } from "./Pages/Destination/DestinationC";
+import { DestinationD } from "./Pages/Destination/DestinationD";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -29,16 +30,20 @@ const router = createBrowserRouter([
         element: <Technology />,
       },
       {
-        path: "/destination",
-        element: <Destination />,
-      },
-      {
         path: "/destinationA",
         element: <DestinationA />,
       },
       {
         path: "/destinationB",
         element: <DestinationB />,
+      },
+      {
+        path: "/destinationC",
+        element: <DestinationC />,
+      },
+      {
+        path: "/destinationD",
+        element: <DestinationD />,
       },
     ],
   },
